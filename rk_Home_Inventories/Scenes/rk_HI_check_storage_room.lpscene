@@ -1,0 +1,40 @@
+WHAT: none
+WHERE: none
+WHEN: 0 - 24
+WHO: none
+OTHER: none
+
+    SceneStart()
+        
+        // Get current art types
+        cheapAType = Player.getActorVar(cheapAType)
+        AffordableAType = Player.getActorVar(AffordableAType)
+        ClassyAType = Player.getActorVar(ClassyAType)
+        NiceAType = Player.getActorVar(NiceAType)
+        FashionAType = Player.getActorVar(FashionAType)
+        HandcraftedAType = Player.getActorVar(HandcraftedAType)
+        FinestAType = Player.getActorVar(FinestAType)
+        FirstQualityAType = Player.getActorVar(FirstQualityAType)
+        value_artproducts = Player.getActorVar(value_artproducts)
+        value_artproducts = cheapAType + AffordableAType + ClassyAType + NiceAType + FashionAType + HandcraftedAType + FinestAType + FirstQualityAType
+    
+        art_inventory = value_artproducts
+    
+    If art_inventory < 0.5 
+        Player(Anxious)::"I got nothing inside my storage room!"
+    Else
+
+        Player(Curious)::"Let's see what I have inside my storage room!"
+        0:: "<cheapAType> cheap art item(s)"
+        0:: "<AffordableAType> affordable art item(s)"
+        0:: "<ClassyAType> classy art item(s)"
+        0:: "<NiceAType> nice art item(s)"
+        0:: "<FashionAType> fashion art item(s)"
+        0:: "<HandcraftedAType> handcrafted art item(s)"
+        0:: "<FinestAType> finest art item(s)"
+        0:: "<FirstQualityAType> first quality art item(s)"
+        99:: "Go back !"
+
+    Endif
+    
+    SceneEnd()

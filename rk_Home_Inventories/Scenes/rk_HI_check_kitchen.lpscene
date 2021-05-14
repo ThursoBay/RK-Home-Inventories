@@ -1,0 +1,40 @@
+WHAT: none
+WHERE: none
+WHEN: 0 - 24
+WHO: none
+OTHER: none
+
+    SceneStart()
+        
+        // Get current item
+        stock_ZellVostro = Player.getActorVar(stock_ZellVostro)
+        stock_LPPavilion = Player.getActorVar(stock_LPPavilion)
+        stock_LPware = Player.getActorVar(stock_LPware)
+        stock_LPX = Player.getActorVar(stock_LPX)
+        stock_Computer = stock_ZellVostro + stock_LPPavilion + stock_LPware + stock_LPX
+        
+        kitchen_inventory =  stock_Computer
+    
+        If kitchen_inventory < 0.5
+        
+            Player(Anxious)::"I got nothing inside my kitchen!"
+            
+        Else
+
+            Player(Curious)::"Let's see what I have inside my kitchen!"
+            0::"Computer"
+            99:: "Go back!"
+        
+            If 0
+        
+                0:: "<stock_ZellVostro> Compact desktop Zell Vostro"
+                0:: "<stock_LPPavilion> LP Pavilion All-in-One"
+                0:: "<stock_LPware> LPware Aurora R12 Gaming Desktop"
+                0:: "<stock_LPX> LPX RA Ryzen Battlebox ultimate"
+                99:: "Go back!"
+        
+            EndIf
+
+        Endif
+    
+    SceneEnd()
