@@ -7,17 +7,27 @@ OTHER: none
     SceneStart()
         
         // Get current item
+        SBstock_IPhone = Player.getActorVar(SBstock_IPhone)
+        SBstock_Samsung = Player.getActorVar(SBstock_Samsung)
+        SBstock_OnePlus = Player.getActorVar(SBstock_OnePlus)
+        SBstock_LPGPower = Player.getActorVar(SBstock_LPGPower)
+        
+        SBstock_ZellVostro = Player.getActorVar(SBstock_ZellVostro)
+        SBstock_LPPavilion = Player.getActorVar(SBstock_LPPavilion)
+        SBstock_LPware = Player.getActorVar(SBstock_LPware)
+        SBstock_LPX = Player.getActorVar(SBstock_LPX)
+        
         stock_IPhone = Player.getActorVar(stock_IPhone)
         stock_Samsung = Player.getActorVar(stock_Samsung)
         stock_OnePlus = Player.getActorVar(stock_OnePlus)
         stock_LPGPower = Player.getActorVar(stock_LPGPower)
-        Stock_phones = stock_IPhone + stock_Samsung + stock_OnePlus + stock_LPGPower
+        Stock_phones = SBstock_IPhone + SBstock_Samsung + SBstock_OnePlus + SBstock_LPGPower
         
         stock_ZellVostro = Player.getActorVar(stock_ZellVostro)
         stock_LPPavilion = Player.getActorVar(stock_LPPavilion)
         stock_LPware = Player.getActorVar(stock_LPware)
         stock_LPX = Player.getActorVar(stock_LPX)
-        stock_Computer = stock_ZellVostro + stock_LPPavilion + stock_LPware + stock_LPX
+        stock_Computer = SBstock_ZellVostro + SBstock_LPPavilion + SBstock_LPware + SBstock_LPX
         
         secondb_inventory = Stock_phones + stock_Computer
     
@@ -32,18 +42,18 @@ OTHER: none
         
             If 0
         
-                0:: "<stock_ZellVostro> Compact desktop Zell Vostro"
-                0:: "<stock_LPPavilion> LP Pavilion All-in-One"
-                0:: "<stock_LPware> LPware Aurora R12 Gaming Desktop"
-                0:: "<stock_LPX> LPX RA Ryzen Battlebox ultimate"
+                0:: "<SBstock_ZellVostro> Compact desktop Zell Vostro"
+                0:: "<SBstock_LPPavilion> LP Pavilion All-in-One"
+                0:: "<SBstock_LPware> LPware Aurora R12 Gaming Desktop"
+                0:: "<SBstock_LPX> LPX RA Ryzen Battlebox ultimate"
                 99:: "Go back!"
             
             ElseIf 1
             
-                0:: "<stock_IPhone> Vinfamy iPhone"
-                0:: "<stock_Samsung> Galaxy LP ultra"
-                0:: "<stock_OnePlus> Vin OnePlus Pro"
-                0:: "<stock_LPGPower> LPlay G Power"
+                0:: "<SBstock_IPhone> Vinfamy iPhone"
+                0:: "<SBstock_Samsung> Galaxy LP ultra"
+                0:: "<SBstock_OnePlus> Vin OnePlus Pro"
+                0:: "<SBstock_LPGPower> LPlay G Power"
                 99:: "Go back!"
         
             EndIf

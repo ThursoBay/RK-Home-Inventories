@@ -3,7 +3,7 @@
 <p>https://github.com/vinfamy/LifePlay</p>
 <br>
 <h3>rk_Home_Inventories :</h3>
-<p>Version: 1.0.1</p>
+<p>Version: 1.0.2</p>
 <br>
 <p>Better way to store your items - Focused on my mods items!</p>
 <p>11 scenes.</p>
@@ -18,6 +18,7 @@
 <p>- Refrigerator</p>
 <br>
 <p>- Kitchen</p>
+<p>- Your bedroom</p>
 <p>- Second bedroom</p>
 <p>- Storage room</p>
 <p>- Third bedroom</p>

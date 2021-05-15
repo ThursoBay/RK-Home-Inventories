@@ -7,11 +7,16 @@ OTHER: none
     SceneStart()
         
         // Get current item
+        Kstock_ZellVostro = Player.getActorVar(Kstock_ZellVostro)
+        Kstock_LPPavilion = Player.getActorVar(Kstock_LPPavilion)
+        Kstock_LPware = Player.getActorVar(Kstock_LPware)
+        Kstock_LPX = Player.getActorVar(Kstock_LPX)
+        
         stock_ZellVostro = Player.getActorVar(stock_ZellVostro)
         stock_LPPavilion = Player.getActorVar(stock_LPPavilion)
         stock_LPware = Player.getActorVar(stock_LPware)
         stock_LPX = Player.getActorVar(stock_LPX)
-        stock_Computer = stock_ZellVostro + stock_LPPavilion + stock_LPware + stock_LPX
+        stock_Computer = Kstock_ZellVostro + Kstock_LPPavilion + Kstock_LPware + Kstock_LPX
         
         kitchen_inventory =  stock_Computer
     
@@ -27,10 +32,10 @@ OTHER: none
         
             If 0
         
-                0:: "<stock_ZellVostro> Compact desktop Zell Vostro"
-                0:: "<stock_LPPavilion> LP Pavilion All-in-One"
-                0:: "<stock_LPware> LPware Aurora R12 Gaming Desktop"
-                0:: "<stock_LPX> LPX RA Ryzen Battlebox ultimate"
+                0:: "<Kstock_ZellVostro> Compact desktop Zell Vostro"
+                0:: "<Kstock_LPPavilion> LP Pavilion All-in-One"
+                0:: "<Kstock_LPware> LPware Aurora R12 Gaming Desktop"
+                0:: "<Kstock_LPX> LPX RA Ryzen Battlebox ultimate"
                 99:: "Go back!"
         
             EndIf

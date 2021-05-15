@@ -30,6 +30,7 @@ OTHER: none
             3::isModEnabled(rk_MoneyMaker) || isModEnabled(rk_JewelryShop)::"Check jewelry box"
             4::isModEnabled(nn_HomeExpander) && hasKitchen::"Check kitchen"
             5::isModEnabled(nn_HomeExpander) && hasLivingroom ::"Check living room"
+            12::"Check my bedroom"
             6::isModEnabled(nn_HomeExpander) && hasOfficeroom::"Check office room"
             7::"Check pantry"
             8::"Check refrigerator"
@@ -61,6 +62,10 @@ OTHER: none
             ElseIf 5
             
                 followUp(rk_HI_check_livingroom)
+            
+            ElseIf 12
+            
+                followUp(rk_HI_check_mydbedroom)
             
             ElseIf 6
             

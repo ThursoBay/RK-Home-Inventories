@@ -1,0 +1,63 @@
+WHAT: none
+WHERE: none
+WHEN: 0 - 24
+WHO: none
+OTHER: none
+
+    SceneStart()
+        
+        // Get current item
+        MBstock_IPhone = Player.getActorVar(MBstock_IPhone)
+        MBstock_Samsung = Player.getActorVar(MBstock_Samsung)
+        MBstock_OnePlus = Player.getActorVar(MBstock_OnePlus)
+        MBstock_LPGPower = Player.getActorVar(MBstock_LPGPower)
+        
+        MBstock_ZellVostro = Player.getActorVar(MBstock_ZellVostro)
+        MBstock_LPPavilion = Player.getActorVar(MBstock_LPPavilion)
+        MBstock_LPware = Player.getActorVar(MBstock_LPware)
+        MBstock_LPX = Player.getActorVar(MBstock_LPX)
+        
+        stock_IPhone = Player.getActorVar(stock_IPhone)
+        stock_Samsung = Player.getActorVar(stock_Samsung)
+        stock_OnePlus = Player.getActorVar(stock_OnePlus)
+        stock_LPGPower = Player.getActorVar(stock_LPGPower)
+        Stock_phones = MBstock_IPhone + MBstock_Samsung + MBstock_OnePlus + MBstock_LPGPower
+        
+        stock_ZellVostro = Player.getActorVar(stock_ZellVostro)
+        stock_LPPavilion = Player.getActorVar(stock_LPPavilion)
+        stock_LPware = Player.getActorVar(stock_LPware)
+        stock_LPX = Player.getActorVar(stock_LPX)
+        stock_Computer = MBstock_ZellVostro + MBstock_LPPavilion + MBstock_LPware + MBstock_LPX
+        
+        secondb_inventory = Stock_phones + stock_Computer
+    
+        If secondb_inventory < 0.5 
+            Player(Anxious)::"I got nothing inside my bedroom!"
+        Else
+
+            Player(Curious)::"Let's see what I have inside my bedroom!"
+            0::"Computer"
+            1::"Mobile phone"
+            99:: "Go back!"
+        
+            If 0
+        
+                0:: "<MBstock_ZellVostro> Compact desktop Zell Vostro"
+                0:: "<MBstock_LPPavilion> LP Pavilion All-in-One"
+                0:: "<MBstock_LPware> LPware Aurora R12 Gaming Desktop"
+                0:: "<MBstock_LPX> LPX RA Ryzen Battlebox ultimate"
+                99:: "Go back!"
+            
+            ElseIf 1
+            
+                0:: "<MBstock_IPhone> Vinfamy iPhone"
+                0:: "<MBstock_Samsung> Galaxy LP ultra"
+                0:: "<MBstock_OnePlus> Vin OnePlus Pro"
+                0:: "<MBstock_LPGPower> LPlay G Power"
+                99:: "Go back!"
+        
+            EndIf
+
+        Endif
+    
+    SceneEnd()
