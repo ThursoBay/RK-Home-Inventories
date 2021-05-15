@@ -3,7 +3,7 @@
 <p>https://github.com/vinfamy/LifePlay</p>
 <br>
 <h3>rk_Home_Inventories :</h3>
-<p>Version: 1.0.1 --> In testing process</p>
+<p>Version: 1.0.1</p>
 <br>
 <p>Better way to store your items - Focused on my mods items!</p>
 <p>11 scenes.</p>
