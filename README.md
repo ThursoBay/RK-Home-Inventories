@@ -3,10 +3,25 @@
 <p>https://github.com/vinfamy/LifePlay</p>
 <br>
 <h3>rk_Home_Inventories :</h3>
-<p>Version: 1.0.0 --> In testing process</p>
+<p>Version: 1.0.1 --> In testing process</p>
 <br>
 <p>Better way to store your items - Focused on my mods items!</p>
-<p>13 scenes.</p>
+<p>11 scenes.</p>
+<p>Inventories are:</p>
+<p>- Adult toys box </p>
+<p>- Freezer</p>
+<p>- Garage</p>
+<p>- Jewelry box</p>
+<p>- Living room</p>
+<p>- Office room</p>
+<p>- Pantry</p>
+<p>- Refrigerator</p>
+<br>
+<p>- Kitchen</p>
+<p>- Second bedroom</p>
+<p>- Storage room</p>
+<p>- Third bedroom</p>
+<br>
 <br>
 <hr>
 <br>
